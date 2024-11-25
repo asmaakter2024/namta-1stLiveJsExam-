@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: gainsboro
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 850px;
+        }
+
+        .playerdiv {
+            border: 3px outset goldenrod;
+            padding: 70px;
+        }
+
+        .player2input {
+            display: none;
+        }
+
+        .player2button {
+            display: none;
+        }
+
+        .anotherHeading {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div></div>
+    <div class="container">
+        <div class="playerdiv">
+            <div class="div1">
+                <h1 class="heading">Player1</h1>
+                <h2 class="anotherHeading">Chances: <span></span></h2>
+
+            </div>
+
+            <div class="div2">
+                <input class="player1input" type="text" placeholder="enter the number">
+                <button class="player1button">click</button>
+                <input class="player2input" type="text" placeholder="guess the number">
+                <button class="player2button">click</button><br />
+                <small class="error"></small>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
